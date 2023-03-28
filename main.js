@@ -20,7 +20,7 @@ const fetchData = async (input) => {
 
   console.log(results);
   if (SLACK_WEBHOOK) {
-    await fetch(SLACK_WEBHOOK, {
+    fetch(SLACK_WEBHOOK, {
       method: "POST",
       mode: "no-cors",
       headers: {
